@@ -1,5 +1,14 @@
 <resources>
-    
+
     <string name="app_name">World News</string>
     <string name="pick_a_country">Pick a country</string>
+    <string name="pick_categories">Pick some categories</string>
+
+    <string name="category_sports">Sports</string>
+    <string name="category_health">Health</string>
+    <string name="welcome">Welcome!</string>
+    <string name="already_registered">Are you already registered?</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="password_forgotten">Did you forget your password?</string>
 </resources>
