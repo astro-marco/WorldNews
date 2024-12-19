@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.unimib.worldnews.LoginFragment"
+        tools:layout="@layout/fragment_login"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_pickCountryActivity"
+            app:destination="@id/pickCountryActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/pickCountryActivity"
+        android:name="com.unimib.worldnews.PickCountryActivity"
+        android:label="activity_pick_a_country"
+        tools:layout="@layout/activity_pick_a_country" />
+</navigation>

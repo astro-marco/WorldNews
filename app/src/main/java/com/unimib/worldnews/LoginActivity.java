@@ -29,39 +29,7 @@ public class LoginActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
 
-        editTextEmail = findViewById(R.id.textInputEmail);
-        editTextPassword = findViewById(R.id.textInputPassword);
 
-        Button loginButton = findViewById(R.id.loginButton);
-
-        loginButton.setOnClickListener(view -> {
-            if (isEmailOk(editTextEmail.getText().toString())) {
-                if(isPasswordOk(editTextPassword.getText().toString())) {
-
-
-                } else {
-                    editTextPassword.setError("The password must have at least 8 chars");
-                    Snackbar.make(findViewById(android.R.id.content),
-                                    "Check your password", Snackbar.LENGTH_SHORT)
-                            .show();
-                }
-            } else {
-                editTextEmail.setError("Check your email");
-                Snackbar.make(findViewById(android.R.id.content),
-                                "Insert a correct email", Snackbar.LENGTH_SHORT)
-                        .show();
-            }
-
-        });
 
     }
-
-    private boolean isEmailOk(String email) {
-        return EmailValidator.getInstance().isValid(email);
-    }
-
-    private boolean isPasswordOk(String password) {
-        return password.length() > 7;
-    }
-
 }
